@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={`${sora.variable} antialiased`}>
+    <html lang="pt-BR" className={`${sora.variable} antialiased font-sans`}>
       <body className="min-h-dvh">{children}</body>
     </html>
   )
