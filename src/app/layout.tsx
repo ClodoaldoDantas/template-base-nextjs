@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
-import { Sora } from 'next/font/google'
+import { Sora, Geist } from 'next/font/google'
 import './globals.css'
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const sora = Sora({
   variable: '--font-sora',
@@ -18,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={`${sora.variable} antialiased`}>
+    <html lang="pt-BR" className={cn("antialiased", sora.variable, "font-sans", geist.variable)}>
       <body className="min-h-dvh">{children}</body>
     </html>
   )
