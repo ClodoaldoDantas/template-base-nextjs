@@ -23,10 +23,9 @@ Template moderno para projetos Next.js com ferramentas de desenvolvimento config
 - Cobertura de código com V8
 
 ### Git Hooks
-- **Husky** - Git hooks automatizados
-- **lint-staged** - Lint em arquivos staged
+- **Lefthook** - Gerenciador de Git hooks
 - Hooks configurados:
-  - `pre-commit` - Validação de código
+  - `pre-commit` - Validação de código com Biome nos arquivos staged
   - `pre-push` - Testes antes do push
 
 ## 📦 Scripts
