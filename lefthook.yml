@@ -7,5 +7,4 @@ pre-commit:
 pre-push:
   commands:
     test:
-      skip_empty: false
       run: pnpm test
